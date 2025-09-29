@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Hahmlet:wght@100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sora:wght@100..800&display=swap');
+
+
+/*reset padrão*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+
+    /*paleta lightmode*/
+
+    --light-bg-color: whitesmoke;
+    --light-component-color: cyan;
+    --light-component-shadow: rgb(1, 95, 95);
+    --light-font-color: black;
+
+    /*paleta darkmode*/
+
+    --dark-bg-color: rgb(22, 22, 22);
+    --dark-component-color: rgb(175, 2, 175);
+    --dark-component-shadow: rgb(78, 1, 78);
+    --dark-font-color: whitesmoke;
+
+    /*fontes*/
+    --font-title: "Anton", sans-serif;
+    --font-suntitle: "Sora", sans-serif;
+    --font-paragraph: "Inter", sans-serif;
+}
