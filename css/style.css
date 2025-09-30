@@ -27,6 +27,66 @@
 
     /*fontes*/
     --font-title: "Anton", sans-serif;
-    --font-suntitle: "Sora", sans-serif;
+    --font-subtitle: "Sora", sans-serif;
     --font-paragraph: "Inter", sans-serif;
+
+
+    /*componentes */
+    --btn-border-radius: 12px;
+
 }
+
+
+.header-conteiner {
+    height: 92px;
+    background-color: var(--light-bg-color);
+    padding: 12px 0 0 36px;
+}
+
+
+.header-title {
+    font-size: 2.5rem;
+    font-family: var(--font-title);
+    font-weight: 100;
+    color: var(--light-font-color);
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navigation-header {
+    display: flex;
+    justify-content: flex-end;
+    gap: 22px;
+    margin-right: 36px;
+}
+
+
+.navigation-header a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    color: var(--light-font-color);
+    font-family: var(--font-subtitle);
+}
+
+
+.navigation-header a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -2px;
+    width: 0;
+    height: 2px;
+    background: var(--light-font-color);
+    transition: width 0.3s ease;
+}
+
+.navigation-header a:hover::after {
+    width: 100%;
+}
+
